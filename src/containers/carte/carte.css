@@ -1,0 +1,62 @@
+.carte {
+    display: flex;
+    flex-direction: row;
+}
+
+.carte-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: right;
+}
+
+.leaflet-container {
+    height: 50vh;
+    width: 80%;
+    border-radius: 2rem;
+  }
+
+
+
+.carte-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.carte-content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF;
+}
+
+.carte-content h4:last-child {
+    color: #ff8A71;
+}
+
+.carte-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 1rem ;
+}
+
+.carte-content p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    margin-bottom: 8rem;
+}
+
+
+
+
+

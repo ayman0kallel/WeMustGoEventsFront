@@ -1,0 +1,67 @@
+.Auth{
+    width: 850px;
+    height: 520px;
+    display: flex;
+    flex-direction:row;
+    gap: 1rem;
+    border: 1px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin: auto; /* Center horizontally */
+    margin-top: 5%; /* Adjust as needed */
+    background-color: #040c18;
+}
+h4{
+    margin: 20px 0 !important;
+}
+.Auth form{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    background-color: #e6e2e2; /* Dark form background color */
+    color: #042c54; /* Light text color */
+    border-radius: 10px;
+}
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+input{
+    height: 20px !important;
+}
+
+
+button{
+    background-color: #ff6b6b !important;
+    height: 45px !important;
+}
+img{
+    width: 47%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 5px;
+}
+span{
+    text-align: start;
+    padding: 10px !important;
+    font-size: 12px;
+}
+p{
+    color: #ff6b6b;
+}
+
+
+.Auth form .MuiCheckbox-root {
+  color: #042c54; 
+}

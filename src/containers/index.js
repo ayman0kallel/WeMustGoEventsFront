@@ -1,0 +1,9 @@
+export { default as Events } from './events/Events';
+export { default as Footer } from './footer/Footer';
+export { default as Header } from './header/Header';
+export { default as Carte } from './carte/Carte';
+export { default as Signup } from './signup/Signup';
+export { default as Signin } from './signin/Signin';
+export { default as EventPage } from './eventPage/EventPage';
+export { default as Favourite } from './favourite/Favourite';
+export { default as AdminPage } from './adminPage/AdminPage';
