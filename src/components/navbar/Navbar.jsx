@@ -49,8 +49,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    setIsLoggedIn(false); // Update authentication status to indicate user is logged out
-    // Redirect user to appropriate page, e.g., home page
+    setIsLoggedIn(false);
     navigate('/homepage');
   };
 
@@ -96,14 +95,25 @@ const Navbar = () => {
             <p><a href="#home">Acceuil</a></p>
             <p><a href="#events">Évènements</a></p>
             <p><a href="#carte">Carte</a></p>
+            {
+
+              role[0] === "ROLE_USER" ? (
+                <div><p><Link to={'/favourite'}>Favoris</Link></p></div>
+              ) : role[0] === "ROLE_ADMIN" ? (
+                <div><p><Link to={'/admin'}>Admin</Link></p></div>
+              ) : (
+                <div></div>
+              )
+          }
           </div>
+          
           {isLoggedIn ? (
-              <div className="navbar-menu_container-links-sign">
+              <div className="navbar-sign">
                 <p>{username}</p>
                 <button type="button" onClick={handleLogout}>Logout</button>
-              </div>
+              </div> 
             ) : (
-              <div className="navbar-menu_container-links-sign">
+              <div className="navbar-sign">
                 <button type="button" onClick={redirectSignin}>Sign in</button>
                 <button type="button" onClick={redirectSignup}>Sign up</button>
               </div>
