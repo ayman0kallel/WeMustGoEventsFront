@@ -60,7 +60,7 @@ const Navbar = () => {
           <img src={logo} />
         </div>
         <div className="navbar-links_container">
-          <p><a href="#home">Acceuil</a></p>
+          <p><a href="/homepage">Acceuil</a></p>
           <p><a href="#events">Évènements</a></p>
           <p><a href="#carte">Carte</a></p>
           {
@@ -92,7 +92,7 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="navbar-menu_container scale-up-center">
           <div className="navbar-menu_container-links">
-            <p><a href="#home">Acceuil</a></p>
+            <p><a href="/homepage">Acceuil</a></p>
             <p><a href="#events">Évènements</a></p>
             <p><a href="#carte">Carte</a></p>
             {

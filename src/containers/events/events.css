@@ -31,8 +31,8 @@
     flex: 1;
 
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10rem;
 }
 
 @media screen and (max-width: 990px) {

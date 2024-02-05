@@ -20,6 +20,13 @@ const Events = () => {
     // Call the fetchArticles function
     fetchArticles();
   }, []);
+
+  const formatDate = (dateString) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const frenchDate = new Date(dateString).toLocaleDateString('fr-FR', options);
+    return frenchDate;
+  };
+
   return (
     <div className="events section__padding" id="events">
       <div className="events-heading">
@@ -32,8 +39,9 @@ const Events = () => {
               key={article.id} 
               id={article.id}
               imgUrl={article.image} 
-              date={article.date} 
+              date={formatDate(article.date)} 
               text={article.title} 
+              description={article.description}
             />
           ))}
         </div>
